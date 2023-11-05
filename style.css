@@ -92,8 +92,8 @@ body {
 .sheet-add-icon {
     width: 2vw;
 }
-.sheet-add-icon:hover {
-    cursor: default;
+.sheet-add-icon>span:hover {
+    cursor: pointer;
 }
 
 .sheets-folder-cont {
@@ -110,15 +110,16 @@ body {
     font-weight: bold;
     text-decoration-thickness: 3px;
     font-size: 0.9rem;
-    /* background-color: lightblue; */
+    background-color: lightblue;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .sheet-content {
-    width: 5rem;
-    /* background-color: lightgreen; */
+    width: fit-content;
+    cursor: pointer;
+    margin-inline: 1rem;
 }
 
 .grid-cont {
