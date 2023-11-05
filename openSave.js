@@ -3,7 +3,7 @@ let openBtn = document.querySelector(".open");
 
 // Download Task
 downloadBtn.addEventListener("click", (e) => {
-    let jsonData = JSON.stringify([sheetDB, graphComponentMatrix]);
+    let jsonData = JSON.stringify([sheetDB]);
     let file = new Blob([jsonData], { type: "application/json" });
 
     let a = document.createElement("a");
@@ -31,12 +31,10 @@ openBtn.addEventListener("click", (e) => {
             // Basic sheet with default data will be created
             addSheetBtn.click();
 
-            // SheetDB, graphComponent
+            // SheetDB
             sheetDB = readSheetData[0];
-            graphComponentMatrix = readSheetData[1];
 
             collectedSheetDB[collectedSheetDB.length-1] = sheetDB;
-            collectedGraphComponent[collectedGraphComponent.length-1] = graphComponentMatrix;
 
             handleSheetProperties();
         })
