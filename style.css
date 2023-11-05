@@ -92,7 +92,7 @@ body {
 .sheet-add-icon {
     width: 2vw;
 }
-.sheet-add-icon>span:hover {
+.sheet-add-icon:hover {
     cursor: pointer;
 }
 
@@ -109,17 +109,18 @@ body {
     text-decoration: underline;
     font-weight: bold;
     text-decoration-thickness: 3px;
-    font-size: 0.9rem;
-    background-color: lightblue;
+    font-size: 15px;
+    /* background-color: lightblue; */
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .sheet-content {
-    width: fit-content;
-    cursor: pointer;
-    margin-inline: 1rem;
+   width: fit-content;
+   cursor: pointer;
+   margin-inline: 1rem;
+    /* background-color: lightgreen; */
 }
 
 .grid-cont {
